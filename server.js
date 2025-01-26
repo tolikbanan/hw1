@@ -1,13 +1,13 @@
 const express = require("express");
 const app = express();
-const port = 8080;
+const port = 8000;
 
 app.get('/', (req, res) => {
     res.send("Welcome to my server!")
 })
 
 app.get('/about', (req, res) => {
-    res.send(res.json({"name": "Salikh", "course": "nodejs basics", "message": "my json responce"}))
+    res.send(res.json({"name": "Ernan", "course": "nodejs basics", "message": "my first json responce"}))
 })
 
 app.get('/datetime', (req, res) => {
